@@ -61,7 +61,7 @@ public class ListWidgetRemoteViewsService extends RemoteViewsService {
                 final long identityToken = Binder.clearCallingIdentity();
 
                 //gets Today in current time and SimpleDateFormat
-                Date fragmentdate = new Date(System.currentTimeMillis()+ ((-2) * 86400000));
+                Date fragmentdate = new Date(System.currentTimeMillis());
                 SimpleDateFormat mformat = new SimpleDateFormat("yyyy-MM-dd");
                 String todayDate = mformat.format(fragmentdate);
 

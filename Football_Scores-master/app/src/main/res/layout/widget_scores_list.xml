@@ -39,6 +39,7 @@
             android:gravity="center"
             android:fontFamily="sans-serif-condensed"
             android:textAppearance="?android:textAppearanceLarge"
+            android:textColor="@color/primary_text"
             android:text="@string/empty_invalid_list"/>
         </FrameLayout>
 </LinearLayout>

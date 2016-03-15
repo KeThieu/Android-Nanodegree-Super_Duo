@@ -118,13 +118,11 @@ public class myFetchService extends IntentService
                     //if there is no data, call the function on dummy data
                     //this is expected behavior during the off season.
                     processJSONdata(getString(R.string.dummy_data), getApplicationContext(), false);
-                    Log.v(LOG_TAG, "Dummy Data");
                     return;
                 }
 
 
                 processJSONdata(JSON_data, getApplicationContext(), true);
-                Log.v(LOG_TAG, "Using data w/API key");
             } else {
                 //Could not Connect
                 Log.d(LOG_TAG, "Could not connect to server.");

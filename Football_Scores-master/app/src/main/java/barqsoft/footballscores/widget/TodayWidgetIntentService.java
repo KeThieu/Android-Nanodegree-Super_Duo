@@ -55,7 +55,7 @@ public class TodayWidgetIntentService extends IntentService {
         AppWidgetManager appWidgetManager = AppWidgetManager.getInstance(this);
         int[] appWidgetIds = appWidgetManager.getAppWidgetIds(new ComponentName(this, TodayWidgetProvider.class));
 
-        Date fragmentdate = new Date(System.currentTimeMillis() + ((-2) * 86400000));
+        Date fragmentdate = new Date(System.currentTimeMillis());
         SimpleDateFormat mformat = new SimpleDateFormat("yyyy-MM-dd");
         String todayDate = mformat.format(fragmentdate);
 

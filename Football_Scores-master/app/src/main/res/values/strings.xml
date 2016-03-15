@@ -41,7 +41,7 @@
     <!--strings added for Content Description and Widgets -->
     <string name="title_widget_today">Football Scores Single</string>
     <string name="title_widget_list">Football Scores Today</string>
-    <string name="empty_no_game_today">There isn\t a known Football match today.</string>
+    <string name="empty_no_game_today">There isn\'t a known Football match today.</string>
     <string name="empty_invalid_list">There are no Football Matches today.</string>
 
     <string name="home_crest_content_description">Home Team: %1$s.</string>
