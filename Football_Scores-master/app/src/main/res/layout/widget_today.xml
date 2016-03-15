@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:padding="@dimen/widget_margin">
+    
+    <LinearLayout android:id="@+id/widget_today_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/touch_selector_white"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/widget_today_home_crest"
+                tools:src="@drawable/ic_launcher"/>
+
+            <TextView
+                android:id="@+id/widget_today_home_team"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:gravity="center"
+                tools:text="Home Team Name"
+                android:textColor="@color/primary_text"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView android:id="@+id/widget_today_score_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                tools:text="@string/test_text"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textColor="@color/primary_text"/>
+
+            <TextView android:id="@+id/widget_today_data_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                tools:text="@string/test_text"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="@color/secondary_text"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/widget_today_away_crest"
+                tools:src="@drawable/ic_launcher"/>
+
+            <TextView
+                android:id="@+id/widget_today_away_team"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:gravity="center"
+                tools:text="Away Team Name"
+                android:textColor="@color/primary_text"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/widget_today_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:text="@string/empty_no_game_today"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="@color/primary_text"
+        android:layout_gravity="center"/>
+
+
+</FrameLayout>
